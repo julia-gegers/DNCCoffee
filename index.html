@@ -7,35 +7,45 @@
     <link href="style.css" rel="stylesheet">
     <title>DNC Coffee</title>
 </head>
-<body >
+<body>
     <nav class="navbar">
         <img class="logo" src="logo.png">
         <h3 class="name">Dnc Coffee</h3>
         <div class="list">
         <a class="link" href="">Home</a>
         <a class="link" href="">Sobre</a>
-        <a class="link" href="">Atendimento</a>
+        <a class="link" id="open" href="">Atendimento</a>
         </div>
     </nav>
     <button class="btn">Fazer pedido</button>
+
+    <div class="modalContainer" id="modalContainer">
+    <div class="modal" id="modal">
+        <button id="close" class="btnX"><i class="fa-light fa-x"></i></button>
+        <h1 class="title">Atendimento</h1>
+        <p class="info">Rua José de Alencar, 111, Centro
+        </p>
+        <p class="info2">CEP: 12209-000 | +55 (11) 3333-8000</p>
+        <button class="btn-modal">ENTRAR EM CONTATO</button>
+    </div>
+    </div>
+
 
     <main>
         <img class="banner" src="banner.png">
     </main>
 
     <footer class="footer">
-
-        
-                    <div class="card" onmouseover="showBtn()">
-                        <img src="image1.png" class="card" alt="Xícara de café">
+                    <div class="card"  onmouseover="showBtn()" >
+                        <img src="image1.png" class="img" alt="Xícara de café">
                         <div class="card-body">
                           <p class="card-text">Nossa loja de café se encontra em um lugar, 100% fictício, porém caso se sinta interessado pode vir tomar um café conosco em nossa sed...</p>
                           <button class="btn-buy">COMPRAR AGORA</button>
                         </div>
                       </div>
                 </div>
-                        <div class="card">
-                        <img src="image2.png" class="card" alt="Xícara de café">
+                        <div class="card" onmouseover="showBtn()" >
+                        <img src="image2.png" class="img" alt="Xícara de café">
                         <div class="card-body">
                           <p class="card-text">Nossa casa de café é a melhor da região, aqui você tem tudo que precisa, uma boa conversar, bons amigos e um ambiente sem igual...</p>
                           <button class="btn-buy">COMPRAR AGORA</button>
@@ -44,8 +54,8 @@
             
                 </div>
                 
-                    <div class="card" >
-                        <img src="image3.png" class="card" alt="Xícara de café">
+                    <div class="card"  onmouseover="showBtn()" >
+                        <img src="image3.png" class="img" alt="Xícara de café">
                         <div class="card-body">
                           <p class="card-text">Por que a DNC? Porque podem contar sempre com um serviço genuíno, uma atmosfera acolhedora e uma incrível xícara de café...</p>
                           <button class="btn-buy">COMPRAR AGORA</button>
@@ -54,17 +64,19 @@
             
                 </div>
                 
-                    <div class="card" >
-                        <img src="image4.png" class="card" alt="Xícara de café">
+                    <div class="card"  onmouseover="showBtn()" >
+                        <img src="image4.png" class="img" alt="Xícara de café">
                         <div class="card-body">
                           <p class="card-text">A escola especialista em formar talentos, com foco em empregabilidade, migração de carreira e aumento de performance.</p>
                           <button class="btn-buy">COMPRAR AGORA</button>
                         </div>
         </div>
-     
         
     </footer>
+
     
+    
+    <script src="https://kit.fontawesome.com/540fd01d62.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>

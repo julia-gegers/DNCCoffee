@@ -85,29 +85,33 @@ a:hover{
 
 .footer{
     display: flex;
-    
-  
 }
-
 
 .card{
-    
+    margin-bottom: 30px;
+    background-color: white;
     align-items: center;
     margin-top: 25px;
-    margin-left: 25px;
+    margin-left: 55px;
     border-radius: 10px;
-    width: 330px;
+    width: 300px;
 }
 
-.card-text{
-    font-size: 18px;
-    margin-left: 25px;
-    font-family: Segoe UI;
-    background-color: white;
+.img{
+    border-radius: 8px;
     width: 300px;
+    
+}
+
+
+.card-text{
+    margin-left: 10px;
     margin-bottom: 20px;
-    padding: 15px;
+    font-size: 18px;
+    font-family: Segoe UI;
+    width: 300px;
     border-radius: 10px;
+    margin-top: 20px;
 }
 
 .btn-buy{
@@ -121,11 +125,13 @@ a:hover{
     font-family: raleway;
     font-weight: 600;
     border: 1px solid;
-    margin-left: 65px;
+    margin-left: 20px;
+    margin-top: 10px;
     margin-bottom: 25px;
+    cursor: pointer;
     display: none;
-    
 }
+
 
 .btn-buy:hover{
     background-color: rgb(0, 0, 0);
@@ -133,6 +139,93 @@ a:hover{
     
 }
 
+.card:hover button{
+    display: block
+}
+
+/* modal */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.modalContainer{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modalContainer.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+.modal{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10%;
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+    width: 600px;
+    justify-content: center;
+    margin-left: 400px;
+    border-radius: 20px; 
+}
+
+.title{
+    font-weight: 300;
+}
+
+
+.info{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.info2{
+    font-size: 20px;
+}
+
+.btn-modal{
+    background-color: #2A3342;
+    color: white;
+    font-family: raleway;
+    border: 0;
+    margin-top: 70px;
+    width: 220px;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 17px;
+    margin-left: 190px;
+    cursor: pointer;
+}
+
+.btnX{
+    border: 0;
+    font-size: 20px;
+    position: absolute;
+    top: 170px;
+    right: 520px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn-modal:hover{
+    background-color: rgb(33, 35, 38);
+    transition: all ease 0.2s;
+}
 
 
 
