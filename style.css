@@ -139,9 +139,6 @@ a:hover{
     
 }
 
-.card:hover button{
-    display: block
-}
 
 /* modal */
 
@@ -153,21 +150,15 @@ a:hover{
 }
 
 .modalContainer{
+    z-index: 1;
     background-color: rgba(0, 0, 0, 0.3);
     position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
     width: 100vw;
-    opacity: 0;
-    pointer-events: none;
+    display: none;
 }
-
-.modalContainer.show{
-    opacity: 1;
-    pointer-events: auto;
-}
-
 
 .modal{
     font-family: 'Montserrat', sans-serif;
